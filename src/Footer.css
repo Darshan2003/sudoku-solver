@@ -1,0 +1,38 @@
+a{
+    text-decoration: none;
+    margin: 15px 10px;
+}
+
+.contact{
+    
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom:0;
+    width:100%;
+    height: auto;   /* Height of the footer */
+    background:rgb(63, 63, 63);
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    font-size: 20px;
+    color: white;
+    
+}
+.mail{
+    margin: 15px 10px;
+    cursor: pointer;
+}

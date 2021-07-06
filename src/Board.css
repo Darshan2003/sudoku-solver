@@ -1,0 +1,239 @@
+.Board {
+  min-height: 700px;
+ text-align: center;
+}
+.heading{
+  font-size: 24px;
+  margin-bottom: 7px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #52006A;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+.right{
+  border-right: 3px solid #52006A;
+}
+.bottom{
+  border-bottom: 3px solid #52006A;
+}
+.top{
+  border-top: 3px solid #52006A;
+}
+.left{
+  border-left: 3px solid #52006A;
+}
+.gridRow{
+  display: table;
+}
+.square:focus {
+  outline: none;
+}
+.Grid{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+button{
+  padding: 10px 20px;
+  margin: 0 5px;
+  margin-top: 20px;
+  background: transparent;
+  border-radius: 7px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  color: #52006A;
+  font-family: 'Acme';
+  border-color: #52006A;
+  -webkit-tap-highlight-color: transparent;
+}
+button:active{
+  transition-duration: 0.20s;
+  background-color: #52006A;
+  border-color: transparent;
+  color: white;
+}
+.reset{
+  /* margin-left: 20px; */
+  color:#52006A;
+  border-color: #52006A;
+}
+.reset:active{
+  background-color: #d9534f;
+}
+#overlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+#popup{
+  border-radius: 10px;
+  padding: 0 15px;
+  min-width: 150px;
+  min-height: 65px;
+  width: auto;
+  height: auto;
+  background-color: rgb(245, 101, 101);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popupContent{
+  padding: 0 50px;
+  padding-bottom: 20px;
+}
+.popupDetails{
+  text-align: left;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropup-content button{
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0s;
+}
+
+.dropup-content button:hover {
+  background-color: #52006A;
+  color: white;
+ }
+.dropup-content button:active {background-color: #52006A;color: white;}
+.dropup:hover .dropup-content {
+  display: block;
+}
+@media (max-width: 490px) {
+  .randomPuzzle{
+    width: 190px;
+  }
+  .Board{
+    min-height: 580px;
+  }
+  .square{
+    height: 35px;
+    width: 35px;
+    font-size: 18px;
+    border-color: #002347;
+  }
+  .popupContent{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .heading{
+    font-size: 18px;
+    color: #002347;
+  }
+  
+  h1{
+    color: #002347;
+  }
+  button{
+    border-color: #002347;
+    color: #002347;
+  }
+  
+  button:active{
+    transition-duration: 0.20s;
+    background-color: #002347;
+    border-color: transparent;
+    color: white;
+  }
+  
+
+ .dropup-content button:hover{
+  background-color: #002347;
+  color: white;
+ }
+ .dropup-content button:active {
+  background-color: #002347;
+  color: white;}
+  .reset{
+    /* margin-left: 20px; */
+    color:#002347;
+    border-color: #002347;
+  }
+}
+
+
+@media (max-width: 340px) {
+  .square{
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+  }
+  .popupContent{
+    font-size: 13px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+ 
+}
+
+@media (max-width: 295px) {
+  .square{
+    height: 25px;
+    width: 25px;
+    font-size: 12px;
+  }
+  .popupContent{
+    font-size: 12px;
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+  }
+}
+
+@media (hover: hover) {
+  button:hover{
+    background-color: #52006A;
+    border-color: transparent;
+    color: white;
+  }
+  .reset:hover{
+    background-color: #ff0800;
+  }
+  
+}
